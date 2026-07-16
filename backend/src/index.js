@@ -22,8 +22,10 @@ app.use(
       process.env.CLIENT_URL
     ],
     credentials: true,
-  })
+  }),
+  console.log("CLIENT_URL =", process.env.CLIENT_URL)
 );
+
 
 app.use("/api/user", userRouter);
 app.use("/api/messages", messageRouter);
