@@ -22,8 +22,7 @@ app.use(
       process.env.CLIENT_URL
     ],
     credentials: true,
-  }),
-  console.log("CLIENT_URL =", process.env.CLIENT_URL)
+  })
 );
 
 
